@@ -53,7 +53,6 @@ Postman-tested endpoints covering valid and invalid scenarios
 
 ## Project Structure
 
-```text
 bookstore-rest-api-java/
 │
 ├── src/                        
@@ -67,6 +66,7 @@ bookstore-rest-api-java/
 │   └── Bookstore_REST_API_Test_Report.pdf
 │
 └── README.md
+
 
 
 ## How to Run the Application
