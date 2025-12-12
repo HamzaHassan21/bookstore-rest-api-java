@@ -56,6 +56,7 @@ Postman-tested endpoints covering valid and invalid scenarios
 bookstore-rest-api-java/
 │
 ├── src/
+
 │ ├── datastore/ # In-memory data stores
 
 │ ├── exception/ # Custom exceptions + mappers
@@ -67,8 +68,10 @@ bookstore-rest-api-java/
 │ └── resource/ # REST endpoint classes
 │
 ├── report/
+
 │ └── Bookstore_REST_API_Test_Report.pdf
 │
+
 └── README.md
 
 ## How to Run the Application
