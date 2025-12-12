@@ -50,26 +50,20 @@ Extensive inline documentation explaining all logic and design decisions
 
 Postman-tested endpoints covering valid and invalid scenarios
 
+
 ## Project Structure
+
 bookstore-rest-api-java/
 │
-├── src/    
-
-│   ├── datastore/      # In-memory data stores
-
-│   ├── exception/      # Custom exceptions + mappers
-
-│   ├── main/           # Application entry point (Grizzly server)
-
-│   ├── model/          # Java object models (Author, Book, etc.)
-
-│   └── resource/       # REST endpoint classes
+├── src/
+│ ├── datastore/ # In-memory data stores
+│ ├── exception/ # Custom exceptions + mappers
+│ ├── main/ # Application entry point (Grizzly server)
+│ ├── model/ # Java object models (Author, Book, etc.)
+│ └── resource/ # REST endpoint classes
 │
 ├── report/
-
-
-│   └── Bookstore_REST_API_Test_Report.pdf
-
+│ └── Bookstore_REST_API_Test_Report.pdf
 │
 └── README.md
 
