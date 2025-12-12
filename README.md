@@ -1,72 +1,137 @@
-# BookstoreAPI – Client-Server Architectures
-
+# Bookstore REST API – Client–Server Architecture (Java, JAX-RS)
 ## Overview
-This project is a complete RESTful API for a fictional bookstore. It is built in Java using JAX-RS (Jersey) and the Grizzly HTTP server. All data is exchanged using JSON, and the entire system is in-memory only, utilizing HashMap and ArrayList — no external databases or frameworks, per coursework requirements.
 
-## Functionality
-The API supports full CRUD operations for managing:
+This project implements a fully functional RESTful API for a fictional bookstore, developed using Java, JAX-RS (Jersey), and the Grizzly HTTP server.
+All data is stored in-memory using HashMap and ArrayList, following the coursework requirement to avoid external databases or frameworks.
 
--  Authors
+The API exposes JSON-based endpoints for managing authors, books, customers, shopping carts, and orders — demonstrating clear client–server design, resource modelling, validation, and exception handling.
 
--  Books
+## Core Functionality
 
--  Customers
+The API supports full CRUD operations for:
 
--  Shopping Carts
+Authors
 
--  Orders
+Books
 
-## Features
+Customers
+
+Shopping Carts
+
+Orders
+
+Each resource follows REST standards using meaningful HTTP methods, status codes, and structured JSON responses.
+
+## Key Features
+
 RESTful architecture using javax.ws.rs and Jersey
 
-In-memory data storage with auto-incrementing IDs
+In-memory persistence with auto-incrementing identifiers
 
-Custom exceptions (AuthorNotFoundException, BookNotFoundException, etc.)
+Custom exceptions, including:
 
-Centralized exception handling using ExceptionMapper
+AuthorNotFoundException
 
-Robust input validation with user-friendly JSON error messages
+BookNotFoundException
 
-Thorough inline comments (first-person perspective)
+CustomerNotFoundException
 
-Postman-tested endpoints with both valid and invalid input scenarios
+CartNotFoundException
+
+InvalidInputException
+
+OutOfStockException
+
+Centralised error handling using ExceptionMapper for consistent JSON error output
+
+Input validation with clear and descriptive error messages
+
+Extensive inline documentation explaining all logic and design decisions
+
+Postman-tested endpoints covering valid and invalid scenarios
 
 ## Project Structure
-File/Folder	Description
-HamzaHassan_BookStoreAPI_W2044381.zip	Full source code, organized into model, resource, exception, and main packages. Includes in-depth first-person comments.
-Bookstore_API_Test_Report_HamzaHassanW2044381.docx	A full test report covering all CRUD endpoints with valid and invalid data, screenshots, and JSON examples.
+bookstore-rest-api-java/
+│
+├── src/    
 
-## How to Run
-Extract the .zip file and open the project in NetBeans or any Java IDE with Maven support.
+│   ├── datastore/      # In-memory data stores
 
-Ensure Java 17+ and Maven are installed and configured.
+│   ├── exception/      # Custom exceptions + mappers
 
-Clean and Build the project using your IDE or mvn clean install.
+│   ├── main/           # Application entry point (Grizzly server)
 
-Run the Main.java class to start the Grizzly HTTP server.
+│   ├── model/          # Java object models (Author, Book, etc.)
 
-Access endpoints using Postman at:
+│   └── resource/       # REST endpoint classes
+│
+├── report/
+
+│   └── Bookstore_REST_API_Test_Report.pdf
+│
+└── README.md
+
+## How to Run the Application
+
+Ensure Java 17+ is installed.
+
+Clone or extract the project.
+
+Open in NetBeans, IntelliJ, VS Code, or any IDE supporting Java.
+
+Build the project:
+
+mvn clean install
+
+
+Run the application by executing Main.java.
+
+The API will be available at:
+
 http://localhost:8080/api/
 
+
+You can now interact with the API using Postman, cURL, or any REST client.
+
 ## Testing Summary
-Detailed test results are provided in the .docx report:
 
-Each API endpoint tested individually
+A full test report is included in the /report directory.
+It contains:
 
-Valid and invalid scenarios
+Endpoint-by-endpoint validation
 
-HTTP status codes compared (expected vs actual)
+Screenshots of successful requests
 
-Custom exception messages demonstrated (e.g. “Book with ID 99 not found”)
+Tests for invalid inputs
+
+Expected vs. actual HTTP status codes
+
+Demonstrations of custom exception handling
+
+e.g., “Book with ID 99 not found”
+
+The testing process verifies predictable and stable behaviour across all CRUD operations.
 
 ## Demo Video
- Watch a full video walkthrough including code explanation and testing:
-YouTube Demo - https://www.youtube.com/watch?v=RR-QPvmMjh8
 
-## Final Notes
-This API was built from scratch with clarity and modularity in mind.
+A complete walkthrough — including code explanation, endpoint behaviour, and Postman testing — is available here:
 
-All logic was explained in comments using a first-person style for better understanding.
+YouTube Demo:
+(https://www.youtube.com/watch?v=RR-QPvmMjh8)
 
-Testing was carried out thoroughly to ensure the API behaves predictably.
+## Notes
+
+This project was built from scratch with a strong focus on:
+
+Clean and modular code
+
+Clear resource separation
+
+Realistic REST API behaviour
+
+Easily readable documentation
+
+Robust and transparent error handling
+
+It serves as a demonstration of Java-based API development, exception management, and client–server architectural principles.
 
