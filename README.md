@@ -57,9 +57,13 @@ bookstore-rest-api-java/
 │
 ├── src/
 │ ├── datastore/ # In-memory data stores
+
 │ ├── exception/ # Custom exceptions + mappers
+
 │ ├── main/ # Application entry point (Grizzly server)
+
 │ ├── model/ # Java object models (Author, Book, etc.)
+
 │ └── resource/ # REST endpoint classes
 │
 ├── report/
