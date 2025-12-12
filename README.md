@@ -135,3 +135,7 @@ Robust and transparent error handling
 
 It serves as a demonstration of Java-based API development, exception management, and client–server architectural principles.
 
+## Author Hamza Hassan - Final-Year Computer Science Student Cloud & DevOps Enthusiast 
+
+## 📫 Connect with Me [LinkedIn](https://www.linkedin.com/in/hamzahassan21/) [Youtube](https://www.youtube.com/channel/UC51JEAEBV8WXwf2ZLROvUJw)
+
