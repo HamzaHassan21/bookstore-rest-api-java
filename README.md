@@ -137,5 +137,7 @@ It serves as a demonstration of Java-based API development, exception management
 
 ## Author Hamza Hassan - Final-Year Computer Science Student, Cloud & DevOps Enthusiast 
 
-## 📫 Connect with Me [LinkedIn](https://www.linkedin.com/in/hamzahassan21/) [Youtube](https://www.youtube.com/channel/UC51JEAEBV8WXwf2ZLROvUJw)
+## 📫 Connect with Me 
+[LinkedIn](https://www.linkedin.com/in/hamzahassan21/) 
+[Youtube](https://www.youtube.com/channel/UC51JEAEBV8WXwf2ZLROvUJw)
 
