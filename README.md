@@ -123,7 +123,7 @@ The testing process verifies predictable and stable behaviour across all CRUD op
 
 A complete walkthrough — including code explanation, endpoint behaviour, and Postman testing — is available here:
 
-YouTube Demo: https://www.youtube.com/watch?v=RR-QPvmMjh8
+**YouTube Demo:** https://www.youtube.com/watch?v=RR-QPvmMjh8
 
 ## Notes
 
